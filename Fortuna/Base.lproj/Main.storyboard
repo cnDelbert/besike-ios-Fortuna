@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello World" textAlignment="center" id="0mD-Fi-gZN">
-                                <rect key="frame" x="35" y="90" width="250" height="600"/>
+                                <rect key="frame" x="35" y="90" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -21,9 +21,21 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="VlA-od-8AW" appends="YES" id="V72-JD-7OO"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="quotationTextView" destination="0mD-Fi-gZN" id="dVf-mX-X0i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VlA-od-8AW">
+                    <connections>
+                        <action selector="rootViewTapped:" destination="vXZ-lx-hvc" id="b2a-RG-aCu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="162.66666666666666" y="320.92000000000002"/>
         </scene>
